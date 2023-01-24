@@ -1,5 +1,6 @@
-"" .ideavimrc - magidc
-"" https://github.com/magidc/dotfiles/blob/master/.ideavimrc
+"" .ideavimrc - vmiliutin
+"" https://raw.githubusercontent.com/VladMiliutin/dotfiles/master/.ideavimrc - vmiliutin
+"" https://github.com/magidc/dotfiles/blob/master/.ideavimrc - parent
 
 "" Settings ========================================================
 set scrolloff=10
@@ -11,7 +12,7 @@ set smartcase
 set incsearch
 set hlsearch
 set visualbell
-set clipboard+=unnamed   
+set clipboard+=unnamed
 let mapleader = " "
 
 "" ThePrimeAgen
@@ -20,11 +21,12 @@ nnoremap <c-u> <c-u>zz
 xnoremap p \"_dP
 map Q gq
 
-
 "" Choosing handlers in conflicting Intellij/IdeaVim keymaps =======
 sethandler <C-i> n-v-i:vim
 sethandler <C-o> n-v-i:vim
 sethandler <C-r> n-v-i:vim
+sethandler <C-d> n-v-i:vim
+sethandler <C-u> n-v-i:vim
 
 "" Key mappings ====================================================
 inoremap jk <Esc>
@@ -55,7 +57,18 @@ nnoremap m ]m
 nnoremap M [m
 nnoremap H ^
 nnoremap L $
-map s <Plug>(easymotion-s)
+
+" Tab move
+nmap <leader>h :action PreviousTab<cr>
+nmap <leader>l :action NextTab<cr>
+
+" Git (leader g)
+nmap <leader>gm :action Git.Menu<cr>
+nmap <leader>gp :action Git.Pull<cr>
+nmap <leader>gf :action Git.Fetch<cr>
+nmap <leader>gb :action Git.CreateNewBranch<cr>
+nmap <leader>gr :action Git.Rebase<cr>
+nmap <leader>gR :action Git.Rebase.Continue<cr>
 
 " Run Application
 nnoremap <leader>tr :action ChooseRunConfiguration<cr>
@@ -152,15 +165,15 @@ nnoremap <leader>sf :action NewScratchFile<cr>
 map <leader>en :action GotoNextError<cr>
 map <leader>ep :action GotoPreviousError<cr>
 
-" Git (leader g)
- 
 " Display Modes (leader m)
-map <leader>sd :action ToggleDistractionFreeMode<cr>
-map <leader>sz :action ToggleZenMode<cr>
-map <leader>sf :action ToggleFullScreen<cr>
+map <leader>md :action ToggleDistractionFreeMode<cr>
+map <leader>mz :action ToggleZenMode<cr>
+map <leader>mf :action ToggleFullScreen<cr>
 
 " Plugin Settings ==================================================
 set highlightedyank
+set surround
+set ideajoin
 
 " Easymotion settings
 set notimeout
@@ -173,7 +186,6 @@ let g:WhichKey_PrefixColor = "#f335b2"
 let g:WhichKey_SortOrder = "by_key_prefix_first"
 
 let g:WhichKeyDesc_leader = "<leader> Leader key"
-let g:WhichKeyDesc_easymotion = "s Jump with Easymotion"
 let g:WhichKeyDesc_leader_deleteargument = "<leader>a Delete function argument"
 let g:WhichKeyDesc_leader_replacewithpaste = "<leader>p Replace with paste"
 let g:WhichKeyDesc_leader_changeparentheses = "<leader>/ Change inside parentheses"
@@ -273,6 +285,13 @@ let g:WhichKeyDesc_error_next = "<leader>en Go to next error"
 let g:WhichKeyDesc_error_previous = "<leader>ep Go to previous error"
 
 " Git (leader g)
+let g:WhichKeyDesc_leader_git = "<leader>g Git actions"
+let g:WhichKeyDesc_git_menu = "<leader>gm Git Menu"
+let g:WhichKeyDesc_git_pull = "<leader>gp Pull"
+let g:WhichKeyDesc_git_fetch = "<leader>gf Fetch"
+let g:WhichKeyDesc_git_newbranch = "<leader>gb New branch"
+let g:WhichKeyDesc_git_rebase = "<leader>gr Rebase"
+let g:WhichKeyDesc_git_rebasecontinue = "<leader>gR rebase-continue"
 
 " Display Modes (leader m)
 let g:WhichKeyDesc_leader_display = "<leader>m Display modes"
@@ -281,7 +300,7 @@ let g:WhichKeyDesc_display_zenmode = "<leader>mz Toggle Zen mode"
 let g:WhichKeyDesc_display_fullscreen = "<leader>mf Toggle full screen"
 
 " Run Configuration
-let g:WhichKeyDesc_leader_display = "<leader>t Run display"
-let g:WhichKeyDesc_leader_run_configuration = "<leader>tr Run configuration"
-let g:WhichKeyDesc_leader_debug_configuration = "<leader>td Debug configuration"
-let g:WhichKeyDesc_leader_stop_configuration = "<leader>ts Stop configuration"
+let g:WhichKeyDesc_leader_conf = "<leader>t Run display"
+let g:WhichKeyDesc_conf_run_configuration = "<leader>tr Run configuration"
+let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration"
+let g:WhichKeyDesc_conf_stop_configuration = "<leader>ts Stop configuration"
