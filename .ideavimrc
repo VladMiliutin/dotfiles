@@ -60,7 +60,7 @@ map s <Plug>(easymotion-s)
 " Run Application
 nnoremap <leader>tr :action ChooseRunConfiguration<cr>
 nnoremap <leader>td :action ChooseDebugConfiguration<cr>
-nnoremap <leader>ts :action ChooseDebugConfiguration<cr>
+nnoremap <leader>ts :action Stop<cr>
 
 " Windows and buffers (leader w)
 nnoremap <leader>wh <C-w>h
