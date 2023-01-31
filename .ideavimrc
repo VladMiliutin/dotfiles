@@ -74,6 +74,7 @@ nmap <leader>gR :action Git.Rebase.Continue<cr>
 nnoremap <leader>tr :action ChooseRunConfiguration<cr>
 nnoremap <leader>td :action ChooseDebugConfiguration<cr>
 nnoremap <leader>ts :action Stop<cr>
+nnoremap <leader>tb :action OpenInBrowser<cr>
 
 " Windows and buffers (leader w)
 nnoremap <leader>wh <C-w>h
@@ -305,3 +306,4 @@ let g:WhichKeyDesc_leader_conf = "<leader>t Run display"
 let g:WhichKeyDesc_conf_run_configuration = "<leader>tr Run configuration"
 let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration"
 let g:WhichKeyDesc_conf_stop_configuration = "<leader>ts Stop configuration"
+let g:WhichKeyDesc_conf_openinbrowser = "<leader>tb Open In Browser"
