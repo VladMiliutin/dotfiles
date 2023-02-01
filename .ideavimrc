@@ -29,8 +29,6 @@ sethandler <C-d> n-v-i:vim
 sethandler <C-u> n-v-i:vim
 
 "" Key mappings ====================================================
-inoremap jk <Esc>
-vnoremap jk <Esc>
 
 " Edit (leader p, Bs, x, /, a, o, O)
 " Easy visual indentation
