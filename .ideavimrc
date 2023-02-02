@@ -85,10 +85,16 @@ nnoremap <leader>wv :action SplitVertically<cr>
 nnoremap <leader>ws :action SplitHorizontally<cr>
 nnoremap <leader>wu :action Unsplit<cr>
 nnoremap <leader>wm :action MoveEditorToOppositeTabGroup<cr>
+nnoremap <leader>wr :action ChangeSplitOrientation<cr>
 
 " Folds
 map | :action CollapseAllRegions<CR>
 map -- :action ExpandAllRegions<CR>
+" Tabs
+nnoremap <leader>1 :action GoToTab1<cr>
+nnoremap <leader>2 :action GoToTab2<cr>
+nnoremap <leader>3 :action GoToTab3<cr>
+nnoremap <leader>4 :action GoToTab4<cr>
 
 " Macros and registers
 " Execute macro saved in 'q' register
@@ -191,6 +197,10 @@ let g:WhichKeyDesc_leader_changeparentheses = "<leader>/ Change inside parenthes
 let g:WhichKeyDesc_leader_changeword = "<leader>x Change whole word"
 let g:WhichKeyDesc_leader_newline = "<leader>o New line in normal mode"
 let g:WhichKeyDesc_leader_newprevline = "<leader>O New line before in normal mode"
+let g:WhichKeyDesc_leader_tab1 = "<leader>1 Tab1"
+let g:WhichKeyDesc_leader_tab2 = "<leader>2 Tab2"
+let g:WhichKeyDesc_leader_tab3 = "<leader>3 Tab3"
+let g:WhichKeyDesc_leader_tab4 = "<leader>4 Tab4"
 
 " Windows and buffers (leader w)
 let g:WhichKeyDesc_leader_window = "<leader>w Window actions"
@@ -302,6 +312,6 @@ let g:WhichKeyDesc_display_fullscreen = "<leader>mf Toggle full screen"
 " Run Configuration
 let g:WhichKeyDesc_leader_conf = "<leader>t Run display"
 let g:WhichKeyDesc_conf_run_configuration = "<leader>tr Run configuration"
-let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration"
+let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration
 let g:WhichKeyDesc_conf_stop_configuration = "<leader>ts Stop configuration"
 let g:WhichKeyDesc_conf_openinbrowser = "<leader>tb Open In Browser"
