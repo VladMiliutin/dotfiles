@@ -120,6 +120,7 @@ map <leader>vp :action ActivateProblemsViewToolWindow<cr>
 map <leader>vs :action ActivateStructureToolWindow<cr>
 map <leader>vt :action ActivateTerminalToolWindow<cr>
 map <leader>vv :action ActivateServicesToolWindow<cr>
+map <leader>vm :action ActivateMavenToolWindow<cr>
 
 " Debug (leader d)
 nnoremap <leader>dr :action Run<cr>
@@ -175,6 +176,15 @@ map <leader>md :action ToggleDistractionFreeMode<cr>
 map <leader>mz :action ToggleZenMode<cr>
 map <leader>mf :action ToggleFullScreen<cr>
 
+" BookMarks
+map <leader>b0 :action ToggleBookmark0<cr>
+map <leader>b1 :action ToggleBookmark1<cr>
+map <leader>b2 :action ToggleBookmark2<cr>
+map <leader>b2 :action ToggleBookmark3<cr>
+map <leader>bb0 :action GotoBookmark0<cr>
+map <leader>bb1 :action GotoBookmark1<cr>
+map <leader>bb2 :action GotoBookmark2<cr>
+map <leader>bb3 :action GotoBookmark3<cr>
 " Plugin Settings ==================================================
 set highlightedyank
 set surround
@@ -315,3 +325,16 @@ let g:WhichKeyDesc_conf_run_configuration = "<leader>tr Run configuration"
 let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration
 let g:WhichKeyDesc_conf_stop_configuration = "<leader>ts Stop configuration"
 let g:WhichKeyDesc_conf_openinbrowser = "<leader>tb Open In Browser"
+
+" BookMarks
+let g:WhichKeyDesc_leader_bookmarks = "<leader>b Bookmarks"
+let g:WhichKeyDesc_bookmark_tooglemark0 = "<leader>b0 Toogle bookmark 0"
+let g:WhichKeyDesc_bookmark_tooglemark1 = "<leader>b1 Toogle bookmark 1"
+let g:WhichKeyDesc_bookmark_tooglemark2 = "<leader>b2 Toogle bookmark 2"
+let g:WhichKeyDesc_bookmark_tooglemark3 = "<leader>b3 Toogle bookmark 3"
+
+let g:WhichKeyDesc_leader_gotobookmark = "<leader>bb Goto Bookmarks"
+let g:WhichKeyDesc_bookmark_gotomark0 = "<leader>bb0 Goto bookmark 0"
+let g:WhichKeyDesc_bookmark_gotomark1 = "<leader>bb1 Goto bookmark 1"
+let g:WhichKeyDesc_bookmark_gotomark2 = "<leader>bb2 Goto bookmark 2"
+let g:WhichKeyDesc_bookmark_gotomark3 = "<leader>bb3 Goto bookmark 3"
