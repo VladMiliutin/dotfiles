@@ -148,16 +148,16 @@ nnoremap <leader>cp :action Back<cr>
 nnoremap <leader>cn :action Forward<cr>
 
 " Refactoring (leader r)
-nnoremap <leader>rr :action ShowIntentionActions<cr>
-nnoremap <leader>rn :action RenameElement<cr>
-nnoremap <leader>rv :action IntroduceVariable<cr>
-nnoremap <leader>rc :action IntroduceConstant<cr>
-nnoremap <leader>rf :action IntroduceField<cr>
-nnoremap <leader>rm :action ExtractMethod<cr>
-nnoremap <leader>rf :action ReformatCode<cr>
+map <leader>rr :action ShowIntentionActions<cr>
+map <leader>rn :action RenameElement<cr>
+map <leader>rv :action IntroduceVariable<cr>
+map <leader>rc :action IntroduceConstant<cr>
+map <leader>rf :action IntroduceField<cr>
+map <leader>rm :action ExtractMethod<cr>
+map <leader>rf :action ReformatCode<cr>
 nnoremap <leader>ro :action OptimizeImports<CR>
-nnoremap <leader>ri :action Inline<CR>
-nnoremap <leader>ra :action AnonymousToInner<CR>
+map <leader>ri :action Inline<CR>
+map <leader>ra :action AnonymousToInner<CR>
 
 " Source generation (leader s)
 nnoremap <leader>sm :action Generate<CR>
@@ -180,7 +180,7 @@ map <leader>mf :action ToggleFullScreen<cr>
 map <leader>b0 :action ToggleBookmark0<cr>
 map <leader>b1 :action ToggleBookmark1<cr>
 map <leader>b2 :action ToggleBookmark2<cr>
-map <leader>b2 :action ToggleBookmark3<cr>
+map <leader>b3 :action ToggleBookmark3<cr>
 map <leader>bb0 :action GotoBookmark0<cr>
 map <leader>bb1 :action GotoBookmark1<cr>
 map <leader>bb2 :action GotoBookmark2<cr>
