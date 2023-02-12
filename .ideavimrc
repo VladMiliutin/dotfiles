@@ -148,16 +148,25 @@ nnoremap <leader>cp :action Back<cr>
 nnoremap <leader>cn :action Forward<cr>
 
 " Refactoring (leader r)
-map <leader>rr :action ShowIntentionActions<cr>
-map <leader>rn :action RenameElement<cr>
-map <leader>rv :action IntroduceVariable<cr>
-map <leader>rc :action IntroduceConstant<cr>
-map <leader>rf :action IntroduceField<cr>
-map <leader>rm :action ExtractMethod<cr>
-map <leader>rf :action ReformatCode<cr>
+nnoremap <leader>rr :action ShowIntentionActions<cr>
+nnoremap <leader>rn :action RenameElement<cr>
+nnoremap <leader>rv :action IntroduceVariable<cr>
+nnoremap <leader>rc :action IntroduceConstant<cr>
+nnoremap <leader>rf :action IntroduceField<cr>
+nnoremap <leader>rm :action ExtractMethod<cr>
+nnoremap <leader>rf :action ReformatCode<cr>
 nnoremap <leader>ro :action OptimizeImports<CR>
-map <leader>ri :action Inline<CR>
-map <leader>ra :action AnonymousToInner<CR>
+nnoremap <leader>ri :action Inline<CR>
+nnoremap <leader>ra :action AnonymousToInner<CR>
+
+vnoremap <leader>rn :action RenameElement<cr>
+vnoremap <leader>rv :action IntroduceVariable<cr>
+vnoremap <leader>rc :action IntroduceConstant<cr>
+vnoremap <leader>rf :action IntroduceField<cr>
+vnoremap <leader>rm :action ExtractMethod<cr>
+vnoremap <leader>rf :action ReformatCode<cr>
+vnoremap <leader>ri :action Inline<CR>
+vnoremap <leader>ra :action AnonymousToInner<CR>
 
 " Source generation (leader s)
 nnoremap <leader>sm :action Generate<CR>
