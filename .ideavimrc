@@ -148,25 +148,16 @@ nnoremap <leader>cp :action Back<cr>
 nnoremap <leader>cn :action Forward<cr>
 
 " Refactoring (leader r)
-nnoremap <leader>rr :action ShowIntentionActions<cr>
-nnoremap <leader>rn :action RenameElement<cr>
-nnoremap <leader>rv :action IntroduceVariable<cr>
-nnoremap <leader>rc :action IntroduceConstant<cr>
-nnoremap <leader>rf :action IntroduceField<cr>
-nnoremap <leader>rm :action ExtractMethod<cr>
-nnoremap <leader>rf :action ReformatCode<cr>
-nnoremap <leader>ro :action OptimizeImports<CR>
-nnoremap <leader>ri :action Inline<CR>
-nnoremap <leader>ra :action AnonymousToInner<CR>
-
-vnoremap <leader>rn :action RenameElement<cr>
-vnoremap <leader>rv :action IntroduceVariable<cr>
-vnoremap <leader>rc :action IntroduceConstant<cr>
-vnoremap <leader>rf :action IntroduceField<cr>
-vnoremap <leader>rm :action ExtractMethod<cr>
-vnoremap <leader>rf :action ReformatCode<cr>
-vnoremap <leader>ri :action Inline<CR>
-vnoremap <leader>ra :action AnonymousToInner<CR>
+map <leader>rr :action ShowIntentionActions<cr>
+map <leader>rn :action RenameElement<cr>
+map <leader>rv :action IntroduceVariable<cr>
+map <leader>rc :action IntroduceConstant<cr>
+map <leader>rf :action IntroduceField<cr>
+map <leader>rm :action ExtractMethod<cr>
+map <leader>rf :action ReformatCode<cr>
+map <leader>ro :action OptimizeImports<CR>
+map <leader>ri :action Inline<CR>
+map <leader>ra :action AnonymousToInner<CR>
 
 " Source generation (leader s)
 nnoremap <leader>sm :action Generate<CR>
@@ -186,6 +177,7 @@ map <leader>mz :action ToggleZenMode<cr>
 map <leader>mf :action ToggleFullScreen<cr>
 
 " BookMarks
+map <leader>bs :action ShowBookmarks<cr>
 map <leader>b0 :action ToggleBookmark0<cr>
 map <leader>b1 :action ToggleBookmark1<cr>
 map <leader>b2 :action ToggleBookmark2<cr>
@@ -337,6 +329,7 @@ let g:WhichKeyDesc_conf_openinbrowser = "<leader>tb Open In Browser"
 
 " BookMarks
 let g:WhichKeyDesc_leader_bookmarks = "<leader>b Bookmarks"
+let g:WhichKeyDesc_bookmark_show = "<leader>bs Show bookmarks"
 let g:WhichKeyDesc_bookmark_tooglemark0 = "<leader>b0 Toogle bookmark 0"
 let g:WhichKeyDesc_bookmark_tooglemark1 = "<leader>b1 Toogle bookmark 1"
 let g:WhichKeyDesc_bookmark_tooglemark2 = "<leader>b2 Toogle bookmark 2"
