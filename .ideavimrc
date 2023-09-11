@@ -1,4 +1,3 @@
-"" .ideavimrc - vmiliutin
 "" https://raw.githubusercontent.com/VladMiliutin/dotfiles/master/.ideavimrc - vmiliutin
 "" https://github.com/magidc/dotfiles/blob/master/.ideavimrc - parent
 
@@ -6,6 +5,7 @@
 set scrolloff=10
 set linenumber
 set relativenumber
+set number
 set showmode
 set showcmd
 set smartcase
