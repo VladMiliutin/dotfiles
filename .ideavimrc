@@ -1,3 +1,4 @@
+"" .ideavimrc - vmiliutin
 "" https://raw.githubusercontent.com/VladMiliutin/dotfiles/master/.ideavimrc - vmiliutin
 "" https://github.com/magidc/dotfiles/blob/master/.ideavimrc - parent
 
@@ -13,6 +14,7 @@ set incsearch
 set hlsearch
 set visualbell
 set clipboard+=unnamed
+set clipboard=unnamedplus
 let mapleader = " "
 
 "" ThePrimeAgen
@@ -37,7 +39,7 @@ vnoremap > >gv
 "Replace word with paste
 nnoremap <leader>p "_diwP
 nnoremap <leader><BS> diw
-nnoremap <leader>x ciw
+"nnoremap <leader>x ciw
 "Change inside parentheses
 nnoremap <leader>/ ci(
 nnoremap E ge
@@ -70,6 +72,7 @@ nmap <leader>gR :action Git.Rebase.Continue<cr>
 
 " Run Application
 nnoremap <leader>tr :action ChooseRunConfiguration<cr>
+nnoremap <leader>tR :action RunClass<cr>
 nnoremap <leader>td :action ChooseDebugConfiguration<cr>
 nnoremap <leader>ts :action Stop<cr>
 nnoremap <leader>tb :action OpenInBrowser<cr>
@@ -146,6 +149,7 @@ nnoremap <leader>cr :action ShowUsages<cr>
 nnoremap <leader>cv :action QuickJavaDoc<cr>
 nnoremap <leader>cp :action Back<cr>
 nnoremap <leader>cn :action Forward<cr>
+nnoremap <leader>co :action OverrideMethods<cr>
 
 " Refactoring (leader r)
 map <leader>rr :action ShowIntentionActions<cr>
@@ -154,6 +158,7 @@ map <leader>rv :action IntroduceVariable<cr>
 map <leader>rc :action IntroduceConstant<cr>
 map <leader>rf :action IntroduceField<cr>
 map <leader>rm :action ExtractMethod<cr>
+map <leader>rm :action ExtractFunction<cr>
 map <leader>rf :action ReformatCode<cr>
 map <leader>ro :action OptimizeImports<CR>
 map <leader>ri :action Inline<CR>
@@ -277,6 +282,7 @@ let g:WhichKeyDesc_code_gotousages = "<leader>cr Show usages (References)"
 let g:WhichKeyDesc_code_doc = "<leader>cv Show docs (hooVer)"
 let g:WhichKeyDesc_code_back = "<leader>cp Go back (Previous)"
 let g:WhichKeyDesc_code_forward = "<leader>cn Go forward (Next)"
+let g:WhichKeyDesc_code_override = "<leader>co Override methods"
 
 " Refactoring (leader r)
 let g:WhichKeyDesc_leader_refactor = "<leader>r Refactoring actions"
@@ -323,6 +329,7 @@ let g:WhichKeyDesc_display_fullscreen = "<leader>mf Toggle full screen"
 " Run Configuration
 let g:WhichKeyDesc_leader_conf = "<leader>t Run display"
 let g:WhichKeyDesc_conf_run_configuration = "<leader>tr Run configuration"
+let g:WhichKeyDesc_conf_run_current_class = "<leader>tR Run current class"
 let g:WhichKeyDesc_conf_debug_configuration = "<leader>td Debug configuration
 let g:WhichKeyDesc_conf_stop_configuration = "<leader>ts Stop configuration"
 let g:WhichKeyDesc_conf_openinbrowser = "<leader>tb Open In Browser"
@@ -340,3 +347,4 @@ let g:WhichKeyDesc_bookmark_gotomark0 = "<leader>bb0 Goto bookmark 0"
 let g:WhichKeyDesc_bookmark_gotomark1 = "<leader>bb1 Goto bookmark 1"
 let g:WhichKeyDesc_bookmark_gotomark2 = "<leader>bb2 Goto bookmark 2"
 let g:WhichKeyDesc_bookmark_gotomark3 = "<leader>bb3 Goto bookmark 3"
+
